@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="151dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logobaber" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_dialog"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/bellerose"
+            android:text="@string/description_book"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bellerose"
+            android:text="@string/booking_information"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:src="@drawable/ic_event_note_black_24dp" />
+
+            <TextView
+                android:id="@+id/txt_booking_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/bellerose"
+                android:text="10h00 at 19/10/2019"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_account_circle_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txt_booking_baber_text"
+                android:text="Hoang Quan"
+                android:textSize="14dp"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/bellerose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="4dp"
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/txt_salon_name"
+            android:text="Salon men's"
+            android:textAllCaps="true"
+            android:fontFamily="@font/bellerose"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_web_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txt_salon_website"
+                android:text="http://youtube.com"
+                android:textSize="14dp"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/bellerose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_add_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txt_salon_phone"
+                android:text="0982604754"
+                android:textSize="14dp"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/bellerose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_access_time_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txt_salon_open_hours"
+                android:text="9h00 - 19h00"
+                android:textSize="14dp"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/bellerose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_location_on_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txt_salon_address"
+                android:text="ha noi"
+                android:textSize="14dp"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/bellerose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_confirm"
+            android:text="Confirm"
+            android:background="@color/colorButton"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/bellerose"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>
